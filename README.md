@@ -1,2 +1,3 @@
 # simple-portfolio
- My first atempt to create portfolio. 
+
+My first atempt to create portfolio.
