@@ -205,5 +205,59 @@ section {
   background: crimson;
   border-radius: 0.5rem;
 }
+/************* SERVICES SECTION **************/
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.services-box {
+  padding: 2px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 0.5rem;
+  border-bottom: 2px solid var(--light_primary);
+  box-shadow: 0 2px 7px rgba(255, 255, 255, 15%);
+}
+
+.services-box .fa-solid {
+  padding-top: 2rem;
+  font-size: 54px;
+  color: var(--light_primary);
+}
+
+.services-box h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.7rem, 0 0.4rem;
+}
+
+.services-box a {
+  color: var(--light_primary);
+  font-size: var(--p_font);
+  font-weight: 500;
+}
+
+.services-box:hover {
+  background: var(--light_primary);
+}
+
+.services-box:hover h3 {
+  color: var(--dark_primary);
+}
+
+.services-box:hover .fa-solid {
+  color: var(--dark_secondary);
+}
+.services-box:hover a {
+  color: var(--dark_primary);
+}
 
 /************* COMMENT TEMPLATE **************/
