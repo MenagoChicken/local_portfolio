@@ -21,14 +21,24 @@
 }
 
 body {
-  background-color: var(--dark_primary);
+  background: var(--dark_primary);
   color: var(--light_primary);
 }
 
-p {
-  font-size: 52px;
+section {
+  padding: 50px 10%;
 }
 
-p:hover {
-  color: var(--light_secondary);
+/************* HOME SECTION **************/
+
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
 }
+
+/************* COMMENT TEMPLATE **************/
