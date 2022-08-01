@@ -8,6 +8,7 @@
   --dark_secondary: #3e6564;
   --light_secondary: #f6b213;
   --light_primary: #f9c74f;
+  --ligh_subcolor: #faedcd; /*we will see about that*/
 
   --big_font: 3.2rem;
   --medium_font: 1.8rem;
@@ -101,4 +102,108 @@ section {
 .btn-contact:hover {
   background: var(--light_secondary);
 }
+
+/************* ABOUT SECTION **************/
+.heading {
+  text-align: center;
+}
+
+.heading h2 {
+  font-size: 30px;
+}
+
+.heading span {
+  font-size: var(--p_font);
+  color: var(--ligh_subcolor);
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.about-img {
+  margin: auto;
+}
+
+.about-img img {
+  height: 320px;
+  width: 320px;
+}
+
+.about-text p {
+  font-size: var(--p_font);
+  font-weight: 400;
+  text-align: justify;
+}
+
+.information {
+  margin: 1rem 0 1.4rem;
+}
+
+.information .info-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.4rem;
+}
+
+.information .info-box .fa-solid {
+  font-size: 22px;
+}
+
+.information .info-box span {
+  font-weight: 400;
+  margin: 1rem;
+}
+/************* SKILLS SECTION **************/
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.skills-img {
+  width: 80%;
+  padding-left: 4rem;
+  object-position: center;
+}
+
+.bar-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+
+.bar-box h3,
+.bar-box span {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.light-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.5rem;
+  background: #f6b213 75%;
+  border-radius: 0.5rem;
+}
+.percent-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.5rem;
+  width: 90%;
+  background: crimson;
+  border-radius: 0.5rem;
+}
+
 /************* COMMENT TEMPLATE **************/
