@@ -259,5 +259,27 @@ section {
 .services-box:hover a {
   color: var(--dark_primary);
 }
+/************* PORTFOLIO SECTION **************/
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.portfolio-img {
+  overflow: hidden;
+  border-radius: 0.5 rem;
+}
+
+.portfolio-img img {
+  width: 100%;
+  display: block;
+}
+
+.portfolio-img img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
 
 /************* COMMENT TEMPLATE **************/
