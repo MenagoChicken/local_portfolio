@@ -90,8 +90,9 @@ section {
   color: var(--light_secondary);
 }
 
-.btn-contact {
+.contact-btn {
   display: inline-block;
+  cursor: pointer;
   background: var(--light_primary);
   color: var(--dark_primary);
   padding: 0.7rem 1.3rem;
@@ -99,7 +100,11 @@ section {
   border-radius: 0.5rem;
 }
 
-.btn-contact:hover {
+.contact-btn a {
+  color: var(--dark_primary);
+}
+
+.contact-btn:hover {
   background: var(--light_secondary);
 }
 
@@ -280,6 +285,51 @@ section {
 .portfolio-img img:hover {
   transform: scale(1.1);
   transition: 1s;
+}
+
+/************* CONTACT SECTION **************/
+.contact-form {
+  display: grid;
+  place-items: center;
+  margin-top: 1rem;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  width: 650px;
+}
+
+form input,
+form textarea {
+  padding: 15px;
+  border-radius: 0.5rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: hsla(260, 100, 44, 0.1);
+  margin-bottom: 1rem;
+  color: var(--dark_primary);
+}
+
+form textarea {
+  resize: none;
+  height: 200px;
+  overflow-y: auto;
+}
+
+.send-btn {
+  width: 160px;
+  cursor: pointer;
+  background: var(--light_primary);
+  color: var(--dark_primary);
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 35%;
+}
+.send-btn:hover {
+  background: var(--light_secondary);
 }
 
 /************* COMMENT TEMPLATE **************/
