@@ -33,6 +33,54 @@ body {
 section {
   padding: 50px 10%;
 }
+/************* NAVBAR SECTION **************/
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--dark_primary);
+  padding: 10px 10%;
+  transition: 0.2s;
+  box-shadow: -3px -3px 7px #ffffff73, 2px 2 px 5px rgba(94, 104, 121, 0.288);
+}
+
+/* .logo {
+  font-size: 1.61rem;
+  font-weight: 600;
+  color: var(--light_primary);
+} */
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  font-size: 1rem;
+  padding: 10px 20px;
+  color: var(--light_primary);
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: var(--light_secondary);
+}
+
+#menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+#lightmode {
+  font-size: 22px;
+  cursor: pointer;
+}
 
 /************* HOME SECTION **************/
 
