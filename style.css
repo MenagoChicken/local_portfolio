@@ -417,4 +417,47 @@ footer h2 {
   color: var(--light_primary);
 }
 
-/************* COMMENT TEMPLATE **************/
+/************* MAKE IT RESPONSIVE **************/
+
+@media (max-width: 991px) {
+  header {
+    padding: 18px 4%;
+  }
+  section {
+    padding: 50px 4%;
+  }
+}
+/* why */
+@media (max-width: 768px) {
+  :root {
+    --big_font: 2.4rem;
+    --medium_font: 1.2rem;
+  }
+}
+/*  */
+
+@media (max-width: 768px) {
+  :root {
+    --big_font: 2.4rem;
+    --medium_font: 1.2rem;
+  }
+  header {
+    padding: 11px 4%;
+  }
+  #menu-icon {
+    display: initial;
+    color: var(--light_primary);
+  }
+  header .navbar {
+    position: absolute;
+    top: -500px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--dark_primary);
+    box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+    transition: 0.2s ease;
+    text-align: center;
+  }
+}
