@@ -30,6 +30,14 @@ body {
   color: var(--light_primary);
 }
 
+/* lightmode */
+body.active {
+  --dark_primary: #f9c74f;
+  --dark_secondary: #f6b213;
+  --light_secondary: #3e6564;
+  --light_primary: #273f3e;
+  --ligh_subcolor: #faedcd;
+}
 section {
   padding: 50px 10%;
 }
