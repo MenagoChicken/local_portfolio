@@ -460,4 +460,80 @@ footer h2 {
     transition: 0.2s ease;
     text-align: center;
   }
+  .navbar.active {
+    top: 100%;
+  }
+
+  .navbar a {
+    padding: 1.5rem;
+    display: block;
+  }
+
+  #darkmode {
+    position: absolute;
+    top: 1.4rem;
+    right: 2rem;
+  }
+  .home {
+    grid-template-columns: 0.5fr 3fr;
+  }
+  .home-img {
+    order: initial;
+  }
+  .home-text {
+    grid-column: 1/3;
+    padding-left: 1.4rem;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  .about-img {
+    display: flex;
+    justify-content: center;
+  }
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+  .skills-img img {
+    padding-left: 0;
+  }
+  .skills-img {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-form form {
+    width: 300px;
+  }
+  .contact-btn {
+    margin-left: 25%;
+  }
+}
+
+@media (max-width: 340px) {
+  :root {
+    --big-font: 1.7rem;
+    --medium-font: 1.1rem;
+  }
+  .home-text span {
+    font-size: 1rem;
+  }
+  .home-text h2 {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .information .info-box span {
+    font-size: 1rem;
+  }
+  .portfolio-content {
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  }
+  .contact-form .contact-form {
+    width: 300px;
+  }
+  .contact-btn {
+    margin-left: 25%;
+  }
 }
