@@ -33,6 +33,7 @@ body {
 section {
   padding: 50px 10%;
 }
+
 /************* NAVBAR SECTION **************/
 header {
   position: fixed;
@@ -99,8 +100,8 @@ header {
 }
 
 .home-img img {
-  height: 70%;
-  width: 70%;
+  height: 60%;
+  width: 60%;
 }
 
 .home-text span {
@@ -210,6 +211,26 @@ header {
   font-weight: 400;
   margin: 1rem;
 }
+
+.download-btn {
+  display: inline-block;
+  cursor: pointer;
+  background: var(--light_primary);
+  color: var(--dark_primary);
+  padding: 0.7rem 1.3rem;
+  border: 0;
+  border-radius: 0.5rem;
+  margin-top: 10px;
+}
+
+.download-btn a {
+  color: var(--dark_primary);
+}
+
+.download-btn:hover {
+  background: var(--light_secondary);
+}
+
 /************* SKILLS SECTION **************/
 .skills-container {
   display: grid;
@@ -219,8 +240,8 @@ header {
   margin-top: 4rem;
 }
 
-.skills-img {
-  width: 80%;
+.skills-img img {
+  width: 100%;
   padding-left: 4rem;
   object-position: center;
 }
@@ -346,6 +367,7 @@ header {
   display: flex;
   flex-direction: column;
   width: 650px;
+  align-items: center;
 }
 
 form input,
@@ -374,7 +396,6 @@ form textarea {
   justify-content: center;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-left: 35%;
 }
 .send-btn:hover {
   background: var(--light_secondary);
@@ -534,6 +555,6 @@ footer h2 {
     width: 300px;
   }
   .contact-btn {
-    margin-left: 25%;
+    margin-left: 15%;
   }
 }
