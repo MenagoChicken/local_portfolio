@@ -36,7 +36,7 @@ body.active {
   --dark_secondary: #f6b213;
   --light_secondary: #3e6564;
   --light_primary: #273f3e;
-  --ligh_subcolor: #faedcd;
+  --ligh_subcolor: #36322a;
 }
 section {
   padding: 50px 10%;
@@ -349,19 +349,88 @@ header {
   margin-top: 2rem;
 }
 
-.portfolio-img {
-  overflow: hidden;
-  border-radius: 0.5 rem;
+.card {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background: #000;
 }
-
-.portfolio-img img {
+.card .image {
   width: 100%;
-  display: block;
+  height: 100%;
+  overflow: hidden;
 }
-
-.portfolio-img img:hover {
-  transform: scale(1.1);
-  transition: 1s;
+.card .image img {
+  width: 100%;
+  transition: 0.5s;
+}
+.card:hover .image img {
+  opacity: 0.5;
+  transform: translateX(30%); /*100%*/
+}
+.card .details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%; /*100%*/
+  height: 100%;
+  background: var(--light_primary);
+  transition: 0.5s;
+  transform-origin: left;
+  transform: perspective(2000px) rotateY(-90deg);
+}
+.card:hover .details {
+  transform: perspective(2000px) rotateY(0deg);
+}
+.card .details .center {
+  padding: 20px;
+  text-align: center;
+  background: var(--ligh_subcolor);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.card .details .center h1 {
+  margin: 0;
+  padding: 0;
+  color: var(--dark_primary);
+  line-height: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.card .details .center h1 span {
+  font-size: 14px;
+  color: var(--dark_primary);
+}
+.card .details .center p {
+  margin: 10px 0;
+  padding: 0;
+  color: var(--dark_secondary);
+}
+.card .details .center ul {
+  margin: 10px auto 0;
+  padding: 0;
+  display: table;
+}
+.card .details .center ul li {
+  list-style: none;
+  margin: 0 5px;
+  float: left;
+}
+.card .details .center ul li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--dark_primary);
+  transform: 0.5s;
+}
+.card .details .center ul li a:hover {
+  background: crimson;
 }
 
 /************* CONTACT SECTION **************/
@@ -414,8 +483,8 @@ footer {
   display: grid;
   place-items: center;
   padding: 20px;
-  background: #ebebeb;
-  color: #000;
+  background: var(--ligh_subcolor);
+  color: var(--dark_primary);
 }
 
 footer h2 {
