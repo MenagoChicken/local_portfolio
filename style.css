@@ -183,7 +183,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .about-img {
@@ -245,7 +245,7 @@ header {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2rem;
-  margin-top: 4rem;
+  margin-top: 1rem;
 }
 
 .skills-img img {
@@ -287,69 +287,68 @@ header {
   background: crimson;
   border-radius: 0.5rem;
 }
-/************* SERVICES SECTION **************/
+/************* MY LIFE SECTION **************/
 
-.services-container {
+.mylife-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
   justify-content: center;
-  gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
-.services-box {
-  padding: 2px;
-  width: 260px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.mylife-card {
+  margin: 10px auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.mylife-card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.mylife-card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.mylife-card .card_title {
   text-align: center;
-  border-radius: 0.5rem;
-  border-bottom: 2px solid var(--light_primary);
-  box-shadow: 0 2px 7px rgba(255, 255, 255, 15%);
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
 }
 
-.services-box .fa-solid {
-  padding-top: 2rem;
-  font-size: 54px;
-  color: var(--light_primary);
+.mylife-card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
 }
 
-.services-box h3 {
-  font-size: 1rem;
-  font-weight: 600;
-  margin: 0.7rem, 0 0.4rem;
+.title-white {
+  color: white;
 }
 
-.services-box a {
-  color: var(--light_primary);
-  font-size: var(--p_font);
-  font-weight: 500;
-}
-
-.services-box:hover {
-  background: var(--light_primary);
-}
-
-.services-box:hover h3 {
-  color: var(--dark_primary);
-}
-
-.services-box:hover .fa-solid {
-  color: var(--dark_secondary);
-}
-.services-box:hover a {
-  color: var(--dark_primary);
-}
 /************* PORTFOLIO SECTION **************/
 .portfolio-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   gap: 1rem;
   margin-top: 2rem;
 }
 
-.card {
+.project-card {
   position: relative;
   top: 50%;
   left: 50%;
@@ -358,20 +357,20 @@ header {
   height: 300px;
   background: #000;
 }
-.card .image {
+.project-card .image {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-.card .image img {
+.project-card .image img {
   width: 100%;
   transition: 0.5s;
 }
-.card:hover .image img {
+.project-card:hover .image img {
   opacity: 0.5;
   transform: translateX(30%); /*100%*/
 }
-.card .details {
+.project-card .details {
   position: absolute;
   top: 0;
   left: 0;
@@ -382,10 +381,10 @@ header {
   transform-origin: left;
   transform: perspective(2000px) rotateY(-90deg);
 }
-.card:hover .details {
+.project-card:hover .details {
   transform: perspective(2000px) rotateY(0deg);
 }
-.card .details .center {
+.project-card .details .center {
   padding: 20px;
   text-align: center;
   background: var(--ligh_subcolor);
@@ -393,7 +392,7 @@ header {
   top: 50%;
   transform: translateY(-50%);
 }
-.card .details .center h1 {
+.project-card .details .center h1 {
   margin: 0;
   padding: 0;
   color: var(--dark_primary);
@@ -401,26 +400,26 @@ header {
   font-size: 20px;
   text-transform: uppercase;
 }
-.card .details .center h1 span {
+.project-card .details .center h1 span {
   font-size: 14px;
   color: var(--dark_primary);
 }
-.card .details .center p {
+.project-card .details .center p {
   margin: 10px 0;
   padding: 0;
   color: var(--dark_secondary);
 }
-.card .details .center ul {
+.project-card .details .center ul {
   margin: 10px auto 0;
   padding: 0;
   display: table;
 }
-.card .details .center ul li {
+.project-card .details .center ul li {
   list-style: none;
   margin: 0 5px;
   float: left;
 }
-.card .details .center ul li a {
+.project-card .details .center ul li a {
   display: block;
   width: 30px;
   height: 30px;
@@ -429,7 +428,7 @@ header {
   color: var(--dark_primary);
   transform: 0.5s;
 }
-.card .details .center ul li a:hover {
+.project-card .details .center ul li a:hover {
   background: crimson;
 }
 
@@ -590,16 +589,8 @@ footer h2 {
     display: flex;
     justify-content: center;
   }
-  .skills-container {
+  .mylife-container {
     grid-template-columns: 1fr;
-  }
-  .skills-img img {
-    padding-left: 0;
-  }
-  .skills-img {
-    padding-top: 2rem;
-    display: flex;
-    justify-content: center;
   }
 
   .contact-form form {
