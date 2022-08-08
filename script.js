@@ -23,7 +23,9 @@ lightmode.onclick = () => {
   }
 };
 
-for (let i = 1; i <= 3; i++) {
+console.log(Object.entries(projectsList));
+
+for (let i = 1; i <= 7; i++) {
   const project = projectsList[i];
   console.log(project);
 
