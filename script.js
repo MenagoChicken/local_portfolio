@@ -1,5 +1,6 @@
 // IMPORT
 import { projectsList } from "./projects.js";
+import { myLifeList } from "./myLife.js";
 
 // VARIABLES
 const header = document.querySelector("header");
@@ -7,6 +8,7 @@ const menu = document.querySelector("#menu-icon");
 const navbar = document.querySelector(".navbar");
 const lightmode = document.querySelector("#lightmode");
 const portfolioContent = document.querySelector(".portfolio-content");
+const myLifeContainer = document.querySelector(".mylife-container");
 
 // FUNCTIONS
 menu.onclick = () => {
@@ -25,8 +27,48 @@ lightmode.onclick = () => {
 
 console.log(Object.entries(projectsList));
 
-for (let i = 1; i <= 7; i++) {
-  const project = projectsList[i];
+myLifeList.forEach((item) => {
+  console.log(item);
+
+  const link = document.createElement("a");
+  link.setAttribute("href", item.link);
+
+  const myLifeCard = document.createElement("div");
+  myLifeCard.classList.add("mylife-card");
+  link.appendChild(myLifeCard);
+
+  const cardImage = document.createElement("div");
+  cardImage.classList.add("card_image");
+  myLifeCard.appendChild(cardImage);
+
+  const img = document.createElement("img");
+  img.setAttribute("src", item.thumbnail);
+  cardImage.appendChild(img);
+
+  const cardTitle = document.createElement("div");
+  cardTitle.classList.add("card_title", "title-white");
+  myLifeCard.appendChild(cardTitle);
+
+  if (item?.name) {
+    const paragraph = document.createElement("p");
+    paragraph.textContent = item.name;
+    cardTitle.appendChild(paragraph);
+  }
+  myLifeContainer.appendChild(link);
+
+  //  <a href="#home">
+  //   <div class="mylife-card">
+  //   <div class="card_image">
+  //     <img src="img/about_me_image/pes.png" />
+  //   </div>
+  //   <div class="card_title title-white">
+  //     <p>Card Title</p>
+  //   </div>
+  // </div>
+  // </a>
+});
+
+projectsList.forEach((project) => {
   console.log(project);
 
   const projectCard = document.createElement("div");
@@ -71,4 +113,4 @@ for (let i = 1; i <= 7; i++) {
   center.appendChild(unorderdList);
 
   portfolioContent.appendChild(projectCard);
-}
+});

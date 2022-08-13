@@ -1,5 +1,5 @@
-export const projectsList = {
-  1: {
+export const projectsList = [
+  {
     name: "Color flipper",
     description: "Press the button to change the background color.",
     thumbnail: "./img/projects_image/color_fliper_300x300.png",
@@ -7,7 +7,7 @@ export const projectsList = {
     pageUrl: "#",
     difficulty: 1,
   },
-  2: {
+  {
     name: "Counter",
     description: "Counter with usage of local storage.",
     thumbnail: "./img/projects_image/counter_300x300.png",
@@ -15,7 +15,7 @@ export const projectsList = {
     pageUrl: "#",
     difficulty: 1,
   },
-  3: {
+  {
     name: "Guess the number - MDN",
     description: "Guess the number game.",
     thumbnail: "./img/projects_image/guess_the_number_300x300.png",
@@ -24,7 +24,7 @@ export const projectsList = {
     pageUrl: "#",
     difficulty: 1,
   },
-  4: {
+  {
     name: "Image gallery",
     description: "Image galery based on a grid.",
     thumbnail: "./img/projects_image/image_gallery_300x300.png",
@@ -32,7 +32,7 @@ export const projectsList = {
     pageUrl: "#",
     difficulty: 2,
   },
-  5: {
+  {
     name: "Pokedex",
     description: "Pokedex using API. Search bar inside.",
     thumbnail: "./img/projects_image/pokedex_300x300.png",
@@ -40,7 +40,7 @@ export const projectsList = {
     pageUrl: "#",
     difficulty: 5,
   },
-  6: {
+  {
     name: "Word counter",
     description: "Count words, letters and characters.",
     thumbnail: "./img/projects_image/word_counter_300x300.png",
@@ -49,4 +49,4 @@ export const projectsList = {
     pageUrl: "#",
     difficulty: 2,
   },
-};
+];
