@@ -289,14 +289,14 @@ header {
 }
 /************* MY LIFE SECTION **************/
 
-.mylife-container {
+.mystuff-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 1 rem;
 }
 
-.mylife-card {
+.mystuff-card {
   margin: 10px auto;
   width: 200px;
   height: 200px;
@@ -307,20 +307,20 @@ header {
   transition: 0.4s;
 }
 
-.mylife-card .card_image {
+.mystuff-card .card_image {
   width: inherit;
   height: inherit;
   border-radius: 40px;
 }
 
-.mylife-card .card_image img {
+.mystuff-card .card_image img {
   width: inherit;
   height: inherit;
   border-radius: 40px;
   object-fit: cover;
 }
 
-.mylife-card .card_title {
+.mystuff-card .card_title {
   text-align: center;
   border-radius: 0px 0px 40px 40px;
   font-family: sans-serif;
@@ -330,7 +330,7 @@ header {
   height: 40px;
 }
 
-.mylife-card:hover {
+.mystuff-card:hover {
   transform: scale(0.9, 0.9);
   box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
     -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
@@ -589,7 +589,7 @@ footer h2 {
     display: flex;
     justify-content: center;
   }
-  .mylife-container {
+  .mustuff-container {
     grid-template-columns: 1fr;
   }
 

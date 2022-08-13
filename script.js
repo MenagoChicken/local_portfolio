@@ -1,6 +1,6 @@
 // IMPORT
-import { projectsList } from "./projects.js";
-import { myLifeList } from "./myLife.js";
+import { projectsList } from "./myProjectsList.js";
+import { myStuffList } from "./myStuffList.js";
 
 // VARIABLES
 const header = document.querySelector("header");
@@ -27,33 +27,32 @@ lightmode.onclick = () => {
 
 console.log(Object.entries(projectsList));
 
-myLifeList.forEach((item) => {
-  console.log(item);
-
+myStuffList.forEach((item) => {
   const link = document.createElement("a");
   link.setAttribute("href", item.link);
 
-  const myLifeCard = document.createElement("div");
-  myLifeCard.classList.add("mylife-card");
-  link.appendChild(myLifeCard);
+  const myStuffCard = document.createElement("div");
+  myStuffCard.classList.add("mystuff-card");
+  link.appendChild(myStuffCard);
 
   const cardImage = document.createElement("div");
   cardImage.classList.add("card_image");
-  myLifeCard.appendChild(cardImage);
+  myStuffCard.appendChild(cardImage);
 
   const img = document.createElement("img");
   img.setAttribute("src", item.thumbnail);
   cardImage.appendChild(img);
 
-  const cardTitle = document.createElement("div");
-  cardTitle.classList.add("card_title", "title-white");
-  myLifeCard.appendChild(cardTitle);
+  if (item.name) {
+    const cardTitle = document.createElement("div");
+    cardTitle.classList.add("card_title", "title-white");
+    myStuffCard.appendChild(cardTitle);
 
-  if (item?.name) {
     const paragraph = document.createElement("p");
     paragraph.textContent = item.name;
     cardTitle.appendChild(paragraph);
   }
+
   myLifeContainer.appendChild(link);
 
   //  <a href="#home">
@@ -69,8 +68,6 @@ myLifeList.forEach((item) => {
 });
 
 projectsList.forEach((project) => {
-  console.log(project);
-
   const projectCard = document.createElement("div");
   projectCard.classList.add("project-card");
 
