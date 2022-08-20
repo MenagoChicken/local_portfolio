@@ -53,7 +53,7 @@ myStuffList.forEach((item) => {
     cardTitle.appendChild(paragraph);
   }
 
-  myLifeContainer.appendChild(link);
+  // myLifeContainer.appendChild(link);
 
   //  <a href="#home">
   //   <div class="mylife-card">

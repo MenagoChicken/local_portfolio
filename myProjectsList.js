@@ -49,4 +49,13 @@ export const projectsList = [
     pageUrl: "#",
     difficulty: 2,
   },
+  {
+    name: "Todo",
+    description: "Make a todo list.",
+    thumbnail: "./img/projects_image/todo_300x300.png",
+    githubLink:
+      "https://github.com/MenagoChicken/PRACTICE-LEARN-PROJECT/tree/main/todo",
+    pageUrl: "#",
+    difficulty: 4,
+  },
 ];
