@@ -107,22 +107,29 @@ section {
   padding: 0.5rem;
 }
 
-.display-video-container .main-video {
+.main-video {
   background: #fff;
   border-radius: 5px;
   padding: 10px;
 }
 
-.display-video-container .main-video .video {
+.display-video-container .main-video video {
   width: 100%;
   border-radius: 5px;
 }
 
-.display-video-container .main-video .title {
+.video-title {
   color: var(--dark_primary);
   font-size: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.video-list-container {
+  background: #fff;
+  height: 520px;
+  border-radius: 5px;
+  overflow-y: auto;
 }
 
 /************* FOOTER SECTION **************/
