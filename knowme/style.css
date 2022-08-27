@@ -102,18 +102,18 @@ section {
 .display-video-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 1rem;
   align-items: flex-start;
+  gap: 1rem;
   padding: 0.5rem;
 }
 
-.main-video {
+.main-video-container {
   background: #fff;
   border-radius: 5px;
   padding: 10px;
 }
 
-.display-video-container .main-video video {
+.display-video-container .main-video-container video {
   width: 100%;
   border-radius: 5px;
 }
@@ -122,14 +122,40 @@ section {
   color: var(--dark_primary);
   font-size: 1.5rem;
   padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .video-list-container {
+  height: 510px;
   background: #fff;
-  height: 520px;
   border-radius: 5px;
   overflow-y: auto;
+}
+
+.video-list-container::-webkit-scrollbar {
+  width: 7px;
+}
+
+.video-list-container::-webkit-scrollbar-track {
+  background: #ccc;
+  border-radius: 50px;
+}
+
+.video-list-container::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 50px;
+}
+
+ul {
+  padding: 5px;
+}
+
+li {
+  background: var(--light_primary);
+}
+
+li video {
+  width: 100px;
+  border-radius: 5px;
 }
 
 /************* FOOTER SECTION **************/
