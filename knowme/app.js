@@ -13,22 +13,22 @@ const videoList = [
 const travelPictureList = [
   {
     place: "Paris",
-    thumbnailURL: "./img/travel/paris.jpg",
+    thumbnailURL: "./img/travel/paris_T_400.jpg",
     fullSizeURL: "./img/travel/paris.jpg",
   },
   {
     place: "London",
-    thumbnailURL: "./img/travel/london.jpg",
+    thumbnailURL: "./img/travel/london_T_400.jpg",
     fullSizeURL: "./img/travel/london.jpg",
   },
   {
     place: "Snowdon",
-    thumbnailURL: "./img/travel/snowdon.jpg",
+    thumbnailURL: "./img/travel/snowdon_T_400.jpg",
     fullSizeURL: "./img/travel/snowdon.jpg",
   },
   {
     place: "Wydmy",
-    thumbnailURL: "./img/travel/wydmy.jpg",
+    thumbnailURL: "./img/travel/wydmy_T_400.jpg",
     fullSizeURL: "./img/travel/wydmy.jpg",
   },
 ];
@@ -37,7 +37,13 @@ const travelPictureList = [
 const ulHTML = document.querySelector(".list");
 const mainVideo = document.querySelector(".main-video-container");
 let previousActiveItem;
-const travelSection = document.querySelector(".travel");
+
+const gallery = document.getElementById("gallery");
+console.log(gallery);
+const popup = document.getElementById("popup");
+console.log(popup);
+const selectedImage = document.getElementById("selectedImage");
+console.log(selectedImage);
 
 // VIDEOS GALLERY LOGIC
 videoList.forEach((video) => {
@@ -80,13 +86,12 @@ travelPictureList.forEach((picture) => {
   immageDiv.classList.add("imageContainer");
 
   const image = document.createElement("img");
-  image.src = picture.fullSizeURL;
+  image.src = picture.thumbnailURL;
   image.alt = picture.place;
   image.classList.add("galleryImg");
 
   image.addEventListener("click", () => {
     //popup stuff
-    backButton.style.visibility = "hidden";
     popup.style.transform = "translateY(0)";
     selectedImage.src = picture.fullSizeURL;
   });
@@ -96,7 +101,6 @@ travelPictureList.forEach((picture) => {
 });
 
 popup.addEventListener("click", () => {
-  backButton.style.visibility = "";
   popup.style.transform = "translate(-100%)";
   popup.src = "";
   popup.alt = "";
