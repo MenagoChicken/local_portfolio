@@ -92,7 +92,15 @@ section {
 }
 
 /************* GAMES SECTION **************/
+.introduction h3 {
+  margin: 10px;
+  font-size: var(--big-font);
+  color: var(--light_primary);
+}
 
+.introduction span {
+  font-size: var(--p_font);
+}
 .games {
   display: flex;
   flex-direction: column;
@@ -120,12 +128,12 @@ section {
 
 .video-title {
   color: var(--dark_primary);
-  font-size: 1.5rem;
+  font-size: var(--big-font);
   padding-top: 1rem;
 }
 
 .video-list-container {
-  height: 510px;
+  height: 500px;
   background: #fff;
   border-radius: 5px;
   overflow-y: auto;
@@ -145,17 +153,29 @@ section {
   border-radius: 50px;
 }
 
-ul {
+.list {
   padding: 5px;
 }
 
-li {
+.item {
   background: var(--light_primary);
+  color: var(--dark_primary);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
 }
 
-li video {
+.list .item video {
   width: 100px;
   border-radius: 5px;
+}
+
+.item-name {
+  color: var(--dark_primary);
+  font-size: var(--p_font);
 }
 
 /************* FOOTER SECTION **************/
