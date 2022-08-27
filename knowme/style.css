@@ -203,7 +203,7 @@ h3 {
   grid-template-columns: 2fr 1fr;
 }
 
-img {
+article img {
   max-width: 300px;
   height: auto;
 }
@@ -216,11 +216,11 @@ img {
   margin: 0 auto;
 }
 
-/* .imageContainer {
+.imageContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+}
 
 #gallery {
   display: grid;
@@ -229,7 +229,7 @@ img {
 }
 
 .galleryImg {
-  max-width: 350px;
+  max-width: 100%;
   border-radius: 10px;
   position: relative;
   transition: transform 250ms;
@@ -247,14 +247,17 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 100%;
-  width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
   transform: translateY(-100%);
   transition: 250ms transform;
+  padding: 10px;
+}
+
+#selectedImage {
+  max-height: 80%;
 }
 
 /************* FOOTER SECTION **************/
