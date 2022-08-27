@@ -92,10 +92,8 @@ section {
 }
 
 /************* GAMES SECTION **************/
-.introduction h3 {
+h3 {
   margin: 10px;
-  font-size: var(--big-font);
-  color: var(--light_primary);
 }
 
 .introduction span {
@@ -192,18 +190,68 @@ section {
 .sports article .main-section {
   display: grid;
   padding: 2rem;
-  grid-template-columns: 1fr 1fr;
   gap: 1rem;
   align-items: center;
   margin: 0 auto;
 }
 
+.photo-left {
+  grid-template-columns: 1fr 2fr;
+}
+
+.photo-right {
+  grid-template-columns: 2fr 1fr;
+}
+
 img {
-  max-width: 500px;
+  max-width: 300px;
   height: auto;
 }
 
-@media (max-width: 650px) {
+/************* TRAVEL SECTION **************/
+
+.images-container {
+  max-width: 1600px;
+  padding: 50px 20px;
+  margin: 0 auto;
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.galleryImg {
+  max-width: 100%;
+  border-radius: 10px;
+  position: relative;
+  transition: transform 250ms;
+  cursor: pointer;
+}
+
+.galleryImg:hover {
+  transform: translateY(-2px);
+  box-shadow: 3px 3px 10px black;
+}
+
+#popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: 250ms transform;
+  padding: 10px;
+}
+
+#selectedImage {
+  max-height: 100%;
 }
 
 /************* FOOTER SECTION **************/
@@ -246,6 +294,10 @@ footer h2 {
 /************* MAKE IT RESPONSIVE **************/
 
 @media (max-width: 991px) {
+  h3 {
+    margin: 20px;
+  }
+
   .top {
     padding: 18px 4%;
   }
@@ -262,7 +314,7 @@ footer h2 {
     display: flex;
     flex-direction: column;
   }
-
+}
 @media (max-width: 768px) {
   :root {
     --big_font: 2.4rem;
