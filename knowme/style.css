@@ -116,7 +116,7 @@ section {
 }
 
 .main-video-container {
-  background: #fff;
+  background: var(--ligh_subcolor);
   border-radius: 5px;
   padding: 10px;
 }
@@ -134,7 +134,7 @@ section {
 
 .video-list-container {
   height: 500px;
-  background: #fff;
+  background: var(--ligh_subcolor);
   border-radius: 5px;
   overflow-y: auto;
 }
@@ -168,6 +168,11 @@ section {
   margin: 5px;
 }
 
+.item:hover {
+  cursor: pointer;
+  background: var(--light_secondary);
+}
+
 .list .item video {
   width: 100px;
   border-radius: 5px;
@@ -176,6 +181,10 @@ section {
 .item-name {
   color: var(--dark_primary);
   font-size: var(--p_font);
+}
+
+.item.active {
+  background: var(--light_secondary);
 }
 
 /************* FOOTER SECTION **************/
@@ -224,21 +233,23 @@ footer h2 {
   section {
     padding: 50px 4%;
   }
-}
-/* why */
-@media (max-width: 768px) {
-  :root {
-    --big_font: 2.4rem;
-    --medium_font: 1.2rem;
+
+  .display-video-container {
+    grid-template-columns: 1.5fr 1fr;
+    padding: 10px;
   }
 }
-/*  */
 
 @media (max-width: 768px) {
   :root {
     --big_font: 2.4rem;
     --medium_font: 1.2rem;
   }
+
+  .display-video-container {
+    grid-template-columns: 1fr;
+  }
+
   .top {
     padding: 11px 4%;
   }
