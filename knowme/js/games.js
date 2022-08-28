@@ -10,40 +10,10 @@ const videoList = [
   { name: "This goes here!", url: "./vid/pes/here.mp4" },
 ];
 
-const travelPictureList = [
-  {
-    place: "Paris",
-    thumbnailURL: "./img/travel/paris_T_400.jpg",
-    fullSizeURL: "./img/travel/paris.jpg",
-  },
-  {
-    place: "London",
-    thumbnailURL: "./img/travel/london_T_400.jpg",
-    fullSizeURL: "./img/travel/london.jpg",
-  },
-  {
-    place: "Snowdon",
-    thumbnailURL: "./img/travel/snowdon_T_400.jpg",
-    fullSizeURL: "./img/travel/snowdon.jpg",
-  },
-  {
-    place: "Wydmy",
-    thumbnailURL: "./img/travel/wydmy_T_400.jpg",
-    fullSizeURL: "./img/travel/wydmy.jpg",
-  },
-];
-
 // CONSTANTS
 const ulHTML = document.querySelector(".list");
 const mainVideo = document.querySelector(".main-video-container");
 let previousActiveItem;
-
-const gallery = document.getElementById("gallery");
-console.log(gallery);
-const popup = document.getElementById("popup");
-console.log(popup);
-const selectedImage = document.getElementById("selectedImage");
-console.log(selectedImage);
 
 // VIDEOS GALLERY LOGIC
 videoList.forEach((video) => {
@@ -78,30 +48,4 @@ videoList.forEach((video) => {
 
     console.log(previousActiveItem);
   });
-});
-
-// Pictures GALLERY LOGIC
-travelPictureList.forEach((picture) => {
-  const immageDiv = document.createElement("div");
-  immageDiv.classList.add("imageContainer");
-
-  const image = document.createElement("img");
-  image.src = picture.thumbnailURL;
-  image.alt = picture.place;
-  image.classList.add("galleryImg");
-
-  image.addEventListener("click", () => {
-    //popup stuff
-    popup.style.transform = "translateY(0)";
-    selectedImage.src = picture.fullSizeURL;
-  });
-
-  immageDiv.appendChild(image);
-  gallery.appendChild(immageDiv);
-});
-
-popup.addEventListener("click", () => {
-  popup.style.transform = "translate(-100%)";
-  popup.src = "";
-  popup.alt = "";
 });

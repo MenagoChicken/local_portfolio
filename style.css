@@ -524,20 +524,13 @@ footer h2 {
     padding: 50px 4%;
   }
 }
-/* why */
-@media (max-width: 768px) {
-  :root {
-    --big_font: 2.4rem;
-    --medium_font: 1.2rem;
-  }
-}
-/*  */
 
 @media (max-width: 768px) {
   :root {
     --big_font: 2.4rem;
     --medium_font: 1.2rem;
   }
+
   header {
     padding: 11px 4%;
   }
@@ -576,6 +569,7 @@ footer h2 {
   }
   .home-img {
     order: initial;
+    padding: 30px;
   }
   .home-text {
     grid-column: 1/3;

@@ -10,12 +10,14 @@ const lightmode = document.querySelector("#lightmode");
 const portfolioContent = document.querySelector(".portfolio-content");
 const myLifeContainer = document.querySelector(".mylife-container");
 
-// FUNCTIONS
+// MENU FUNCTIONS
 menu.onclick = () => {
   navbar.classList.toggle("active");
+  console.log("Togele menu!");
 };
 
 lightmode.onclick = () => {
+  console.log("Togele light mode!");
   if (lightmode.classList.contains("fa-regular")) {
     lightmode.classList.replace("fa-regular", "fa-solid");
     document.body.classList.add("active");
@@ -26,46 +28,6 @@ lightmode.onclick = () => {
 };
 
 console.log(Object.entries(projectsList));
-
-myStuffList.forEach((item) => {
-  const link = document.createElement("a");
-  link.setAttribute("href", item.link);
-
-  const myStuffCard = document.createElement("div");
-  myStuffCard.classList.add("mystuff-card");
-  link.appendChild(myStuffCard);
-
-  const cardImage = document.createElement("div");
-  cardImage.classList.add("card_image");
-  myStuffCard.appendChild(cardImage);
-
-  const img = document.createElement("img");
-  img.setAttribute("src", item.thumbnail);
-  cardImage.appendChild(img);
-
-  if (item.name) {
-    const cardTitle = document.createElement("div");
-    cardTitle.classList.add("card_title", "title-white");
-    myStuffCard.appendChild(cardTitle);
-
-    const paragraph = document.createElement("p");
-    paragraph.textContent = item.name;
-    cardTitle.appendChild(paragraph);
-  }
-
-  // myLifeContainer.appendChild(link);
-
-  //  <a href="#home">
-  //   <div class="mylife-card">
-  //   <div class="card_image">
-  //     <img src="img/about_me_image/pes.png" />
-  //   </div>
-  //   <div class="card_title title-white">
-  //     <p>Card Title</p>
-  //   </div>
-  // </div>
-  // </a>
-});
 
 projectsList.forEach((project) => {
   const projectCard = document.createElement("div");
