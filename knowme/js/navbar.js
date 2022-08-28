@@ -1,4 +1,5 @@
 // VARIEABLES
+const menu = document.querySelector("#menu-icon");
 const navbar = document.querySelector(".navbar");
 const lightmode = document.querySelector("#lightmode");
 

@@ -289,55 +289,13 @@ header {
 }
 /************* MY STUFF SECTION **************/
 
-.mystuff-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-  justify-content: center;
-  margin-top: 1 rem;
+.mystuff-container img {
+  width: 100%;
+  padding: 1rem;
 }
 
-.mystuff-card {
-  margin: 10px auto;
-  width: 200px;
-  height: 200px;
-  border-radius: 40px;
-  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
-    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+.mystuff-container img:hover {
   cursor: pointer;
-  transition: 0.4s;
-}
-
-.mystuff-card .card_image {
-  width: inherit;
-  height: inherit;
-  border-radius: 40px;
-}
-
-.mystuff-card .card_image img {
-  width: inherit;
-  height: inherit;
-  border-radius: 40px;
-  object-fit: cover;
-}
-
-.mystuff-card .card_title {
-  text-align: center;
-  border-radius: 0px 0px 40px 40px;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 30px;
-  margin-top: -80px;
-  height: 40px;
-}
-
-.mystuff-card:hover {
-  transform: scale(0.9, 0.9);
-  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
-    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
-}
-
-.title-white {
-  color: white;
 }
 
 /************* PORTFOLIO SECTION **************/
@@ -582,9 +540,6 @@ footer h2 {
   .about-img {
     display: flex;
     justify-content: center;
-  }
-  .mustuff-container {
-    grid-template-columns: 1fr;
   }
 
   .contact-form form {
