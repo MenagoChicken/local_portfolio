@@ -243,52 +243,39 @@ header {
 
 /************* SKILLS SECTION **************/
 .skills-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  gap: 2rem;
   margin-top: 1rem;
-}
-
-.skills-img img {
-  width: 100%;
-  padding-left: 4rem;
-  object-position: center;
-}
-
-.bar-box {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
   position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
-  margin-bottom: 1rem;
 }
 
-.bar-box h3,
-.bar-box span {
-  font-size: 1.1rem;
-  font-weight: 500;
+.skills-container .icon {
+  margin: auto;
+  font-size: 100px;
+  font-weight: 600;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  height: calc(10vw + 20px);
+  transition: all 0.2s ease-in;
 }
 
-.light-bar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0.5rem;
-  background: #f6b213 75%;
-  border-radius: 0.5rem;
+.skills-container .skill-content {
+  border-top: 2px solid var(--ligh_subcolor);
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 5px;
 }
-.percent-bar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 0.5rem;
-  width: 90%;
-  background: crimson;
-  border-radius: 0.5rem;
+
+.title {
+  font-weight: 600;
 }
+.description {
+  margin: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 /************* MY STUFF SECTION **************/
 
 .mystuff-container img {
@@ -550,6 +537,10 @@ footer h2 {
   .contact-btn {
     margin-left: 25%;
   }
+
+  .skills-container .skill-content {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 340px) {
@@ -575,5 +566,9 @@ footer h2 {
   }
   .contact-btn {
     margin-left: 15%;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
   }
 }
