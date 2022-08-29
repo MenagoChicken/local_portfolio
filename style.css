@@ -254,10 +254,12 @@ header {
   font-size: 100px;
   font-weight: 600;
   padding: 10px 0;
-  position: sticky;
   top: 0;
-  height: calc(10vw + 20px);
-  transition: all 0.2s ease-in;
+}
+
+.skills-container img {
+  height: 100px;
+  width: 100px;
 }
 
 .skills-container .skill-content {
