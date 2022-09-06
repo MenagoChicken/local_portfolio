@@ -20,7 +20,7 @@ export const projectsList = [
     description: "Guess the number game.",
     thumbnail: "./img/projects_image/guess_the_number_300x300.png",
     githubLink:
-      "https://github.com/MenagoChicken/PRACTICE-LEARN-PROJECT/tree/main/mdn-webdocs/guess-the-number",
+      "https://github.com/MenagoChicken/small-projects/tree/main/guess-the-number",
     pageUrl: "./projects/small-projects/guess-the-number",
     difficulty: 1,
   },
@@ -45,7 +45,7 @@ export const projectsList = [
     description: "Count words, letters and characters.",
     thumbnail: "./img/projects_image/word_counter_300x300.png",
     githubLink:
-      "https://github.com/MenagoChicken/PRACTICE-LEARN-PROJECT/tree/main/how-many-words",
+      "https://github.com/MenagoChicken/small-projects/tree/main/how-many-words",
     pageUrl: "./projects/small-projects/how-many-words",
     difficulty: 2,
   },
@@ -53,8 +53,7 @@ export const projectsList = [
     name: "Todo",
     description: "Make a todo list.",
     thumbnail: "./img/projects_image/todo_300x300.png",
-    githubLink:
-      "https://github.com/MenagoChicken/PRACTICE-LEARN-PROJECT/tree/main/todo",
+    githubLink: "https://github.com/MenagoChicken/todo",
     pageUrl: "./projects/todo",
     difficulty: 4,
   },
