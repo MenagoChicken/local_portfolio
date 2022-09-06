@@ -4,7 +4,7 @@ export const projectsList = [
     description: "Press the button to change the background color.",
     thumbnail: "./img/projects_image/color_fliper_300x300.png",
     githubLink: "https://github.com/MenagoChicken/Color-Flipper",
-    pageUrl: "#",
+    pageUrl: "./projects/color-flipper/",
     difficulty: 1,
   },
   {
@@ -12,7 +12,7 @@ export const projectsList = [
     description: "Counter with usage of local storage.",
     thumbnail: "./img/projects_image/counter_300x300.png",
     githubLink: "https://github.com/MenagoChicken/Counter",
-    pageUrl: "#",
+    pageUrl: "./projects/counter",
     difficulty: 1,
   },
   {
@@ -21,7 +21,7 @@ export const projectsList = [
     thumbnail: "./img/projects_image/guess_the_number_300x300.png",
     githubLink:
       "https://github.com/MenagoChicken/PRACTICE-LEARN-PROJECT/tree/main/mdn-webdocs/guess-the-number",
-    pageUrl: "#",
+    pageUrl: "./projects/small-projects/guess-the-number",
     difficulty: 1,
   },
   {
@@ -29,7 +29,7 @@ export const projectsList = [
     description: "Image galery based on a grid.",
     thumbnail: "./img/projects_image/image_gallery_300x300.png",
     githubLink: "https://github.com/MenagoChicken/image-gallery",
-    pageUrl: "#",
+    pageUrl: "./projects/image-gallery",
     difficulty: 2,
   },
   {
@@ -37,7 +37,7 @@ export const projectsList = [
     description: "Pokedex using API. Search bar inside.",
     thumbnail: "./img/projects_image/pokedex_300x300.png",
     githubLink: "https://github.com/MenagoChicken/Pokedex",
-    pageUrl: "#",
+    pageUrl: "./projects/pokedex",
     difficulty: 5,
   },
   {
@@ -46,7 +46,7 @@ export const projectsList = [
     thumbnail: "./img/projects_image/word_counter_300x300.png",
     githubLink:
       "https://github.com/MenagoChicken/PRACTICE-LEARN-PROJECT/tree/main/how-many-words",
-    pageUrl: "#",
+    pageUrl: "./projects/small-projects/how-many-words",
     difficulty: 2,
   },
   {
@@ -55,7 +55,7 @@ export const projectsList = [
     thumbnail: "./img/projects_image/todo_300x300.png",
     githubLink:
       "https://github.com/MenagoChicken/PRACTICE-LEARN-PROJECT/tree/main/todo",
-    pageUrl: "#",
+    pageUrl: "./projects/todo",
     difficulty: 4,
   },
 ];
