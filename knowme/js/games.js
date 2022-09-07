@@ -1,6 +1,5 @@
 // IMPORT DIDN'T WORK SO I JUST CREATED LIST HERE
 const videoList = [
-  { name: "Kick it!!!", url: "./vid/pes/kick_it.mp4" },
   { name: "Free kick", url: "./vid/pes/free_kick.mp4" },
   { name: "Ladies and Gentlemens Luka Modrić!", url: "./vid/pes/modric.mp4" },
   {
