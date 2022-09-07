@@ -90,6 +90,21 @@ section {
   font-size: 22px;
   cursor: pointer;
 }
+/************* WELCOME SECTION **************/
+
+.welcome {
+  min-height: 71vh;
+}
+
+.introduction-main {
+  display: block;
+  margin: auto;
+  width: 70%;
+}
+
+.introduction h3 {
+  margin-top: 3rem;
+}
 
 /************* GAMES SECTION **************/
 h3 {
@@ -99,6 +114,7 @@ h3 {
 .introduction span {
   font-size: var(--p_font);
 }
+
 .games {
   display: flex;
   flex-direction: column;
@@ -111,6 +127,7 @@ h3 {
   align-items: flex-start;
   gap: 1rem;
   padding: 0.5rem;
+  padding-top: 3rem;
 }
 
 .main-video-container {

@@ -190,11 +190,6 @@ header {
   margin: auto;
 }
 
-.about-img img {
-  height: 320px;
-  width: 320px;
-}
-
 .about-text p {
   font-size: var(--p_font);
   font-weight: 400;
@@ -272,21 +267,39 @@ header {
 .title {
   font-weight: 600;
 }
+
 .description {
   margin: 20px;
   text-align: justify;
   text-justify: inter-word;
 }
 
+.description li {
+  list-style: inside;
+}
+
+.heading.separator {
+  margin-top: 3rem;
+  border-bottom: solid;
+  border-color: var(--ligh_subcolor);
+}
+
 /************* MY STUFF SECTION **************/
 
 .mystuff-container img {
-  width: 100%;
+  border: solid 5px;
+  border-color: var(--light_primary);
+  border-radius: 1rem;
+  margin: 1rem;
   padding: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mystuff-container img:hover {
   cursor: pointer;
+  border-color: var(--light_secondary);
 }
 
 /************* PORTFOLIO SECTION **************/
