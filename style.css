@@ -435,9 +435,15 @@ form textarea {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.send-btn:hover {
-  background: var(--light_secondary);
+
+.send-btn.disable {
+  background: grey;
+  cursor: default;
 }
+
+/* .send-btn:hover {
+  background: var(--light_secondary);
+} */
 
 /************* FOOTER SECTION **************/
 footer {

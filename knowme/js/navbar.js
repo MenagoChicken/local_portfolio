@@ -11,9 +11,18 @@ if (lightModeOn) {
 }
 
 // MENU FUNCTIONS
-menu.onclick = () => {
+//show navbar
+menu.addEventListener("click", () => {
   navbar.classList.toggle("active");
-};
+  menu.classList.toggle("fa-bars");
+  menu.classList.toggle("fa-xmark");
+});
+
+//hide after choosing section
+navbar.addEventListener("click", () => {
+  navbar.classList.toggle("active");
+  menu.classList.replace("fa-xmark", "fa-bars");
+});
 
 lightmode.onclick = () => {
   if (lightmode.classList.contains("fa-regular")) {

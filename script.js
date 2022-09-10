@@ -4,28 +4,36 @@ import { projectsList } from "./myProjectsList.js";
 // VARIABLES
 const menu = document.querySelector("#menu-icon");
 const navbar = document.querySelector(".navbar");
-const lightmode = document.querySelector("#lightmode");
+const lightMode = document.querySelector("#lightmode");
 const portfolioContent = document.querySelector(".portfolio-content");
 const lightModeOn = localStorage.getItem("lightModeOn");
 
 if (lightModeOn) {
-  console.log("spelniony warunek");
-  lightmode.classList.replace("fa-regular", "fa-solid");
+  lightMode.classList.replace("fa-regular", "fa-solid");
   document.body.classList.add("active");
 }
 
 // MENU FUNCTIONS
-menu.onclick = () => {
+//show navbar
+menu.addEventListener("click", () => {
   navbar.classList.toggle("active");
-};
+  menu.classList.toggle("fa-bars");
+  menu.classList.toggle("fa-xmark");
+});
 
-lightmode.onclick = () => {
-  if (lightmode.classList.contains("fa-regular")) {
-    lightmode.classList.replace("fa-regular", "fa-solid");
+//hide after choosing section
+navbar.addEventListener("click", () => {
+  navbar.classList.toggle("active");
+  menu.classList.replace("fa-xmark", "fa-bars");
+});
+
+lightMode.onclick = () => {
+  if (lightMode.classList.contains("fa-regular")) {
+    lightMode.classList.replace("fa-regular", "fa-solid");
     document.body.classList.add("active");
     localStorage.setItem("lightModeOn", "yes");
   } else {
-    lightmode.classList.replace("fa-solid", "fa-regular");
+    lightMode.classList.replace("fa-solid", "fa-regular");
     document.body.classList.remove("active");
     localStorage.setItem("lightModeOn", "");
   }
