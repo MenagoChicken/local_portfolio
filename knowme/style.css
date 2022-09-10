@@ -269,14 +269,14 @@ article img {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(-100%);
+  transform: translateY(-400%);
   transition: 250ms transform;
   padding: 10px;
 }
 
 #selectedImage {
-  max-width: 80%;
-  max-height: 80%;
+  max-height: 90%;
+  max-width: 90%;
 }
 
 /************* FOOTER SECTION **************/
