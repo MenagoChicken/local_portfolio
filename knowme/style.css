@@ -275,6 +275,7 @@ article img {
 }
 
 #selectedImage {
+  max-width: 80%;
   max-height: 80%;
 }
 

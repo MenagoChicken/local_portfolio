@@ -51,7 +51,7 @@ travelPictureList.forEach((picture) => {
 });
 
 popup.addEventListener("click", () => {
-  popup.style.transform = "translate(-100%)";
+  popup.style.transform = "translate(-400%)";
   popup.src = "";
   popup.alt = "";
 });
