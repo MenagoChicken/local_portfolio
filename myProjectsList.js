@@ -59,10 +59,10 @@ export const projectsList = [
 	},
 	{
 		name: "Pigs Game",
-		description: "Get to a 500 ane win",
-		thumbnail: "./img/projects_image/pigsgame_300_300.png",
+		description: "Get to a 50 and win the game.",
+		thumbnail: "./img/projects_image/pigsgame_300x300.png",
 		githubLink: "https://github.com/MenagoChicken/pigsgame",
 		pageUrl: "./projects/pigsgame",
-		difficulty: 4,
+		difficulty: 3,
 	},
 ];
