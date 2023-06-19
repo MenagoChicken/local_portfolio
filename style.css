@@ -225,7 +225,7 @@ header {
 	padding: 0.7rem 1.3rem;
 	border: 0;
 	border-radius: 0.5rem;
-	margin-top: 10px;
+	margin-top: 0.3rem;
 }
 
 .download-btn a {
@@ -271,11 +271,11 @@ header {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 1rem;
-	font-size: 0.9em;
-	min-width: 400px;
-	border-radius: 5px 5px 0 0;
+	font-size: 1rem;
+	width: 100%;
+	border-radius: 0.2rem 0.2rem 0 0;
 	overflow: hidden;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.15);
 }
 
 .content-table thead tr {
@@ -287,11 +287,11 @@ header {
 
 .content-table th,
 .content-table td {
-	padding: 12px 15px;
+	padding: 1rem 1rem;
 }
 
 .content-table tbody tr {
-	border-bottom: 1px solid var(--light_primary);
+	border-bottom: 0.1rem solid var(--light_primary);
 }
 
 .content-table tbody tr:nth-of-type(even) {
@@ -299,12 +299,58 @@ header {
 }
 
 .content-table tbody tr:last-of-type {
-	border-bottom: 2px solid var(--light_primary);
+	border-bottom: 0.1rem solid var(--light_primary);
 }
 
 .content-table tbody tr.active-row {
 	font-weight: bold;
 	color: var(--dark_primary);
+}
+
+/****** click button ********/
+
+/* CSS */
+.button-8 {
+	background-color: #e1ecf4;
+	border-radius: 3px;
+	border: 1px solid #7aa7c7;
+	box-shadow: rgba(255, 255, 255, 0.7) 0 1px 0 0 inset;
+	box-sizing: border-box;
+	color: #39739d;
+	cursor: pointer;
+	display: inline-block;
+	font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans",
+		sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 1.15385;
+	margin: 0;
+	outline: none;
+	padding: 8px 0.8em;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	vertical-align: baseline;
+	white-space: nowrap;
+}
+
+.button-8:hover,
+.button-8:focus {
+	background-color: #b3d3ea;
+	color: #2c5777;
+}
+
+.button-8:focus {
+	box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+}
+
+.button-8:active {
+	background-color: #a0c7e4;
+	box-shadow: none;
+	color: #2c5777;
 }
 
 /************* MY STUFF SECTION **************/
@@ -582,7 +628,7 @@ footer h2 {
 		margin-left: 25%;
 	}
 
-	.skills-container .skill-content {
+	.skills-container {
 		grid-template-columns: 1fr;
 	}
 }
